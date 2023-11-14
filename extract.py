@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 def scrape_hospital_data():
-    url = 'http://trialing-talent.s3-website-eu-west-1.amazonaws.com/'
+    url = 'removed-for-privacy.url'
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
     return soup.find_all(class_='card')
